@@ -1,0 +1,10 @@
+C:\Users\Sarah Francis\Documents\C#\Aula1\Aula1\bin\Debug\Aula1.exe.config
+C:\Users\Sarah Francis\Documents\C#\Aula1\Aula1\bin\Debug\Aula1.exe
+C:\Users\Sarah Francis\Documents\C#\Aula1\Aula1\bin\Debug\Aula1.pdb
+C:\Users\Sarah Francis\Documents\C#\Aula1\Aula1\obj\Debug\Aula1.csprojAssemblyReference.cache
+C:\Users\Sarah Francis\Documents\C#\Aula1\Aula1\obj\Debug\Aula1.frmTelaAcesso.resources
+C:\Users\Sarah Francis\Documents\C#\Aula1\Aula1\obj\Debug\Aula1.Properties.Resources.resources
+C:\Users\Sarah Francis\Documents\C#\Aula1\Aula1\obj\Debug\Aula1.csproj.GenerateResource.cache
+C:\Users\Sarah Francis\Documents\C#\Aula1\Aula1\obj\Debug\Aula1.exe
+C:\Users\Sarah Francis\Documents\C#\Aula1\Aula1\obj\Debug\Aula1.pdb
+C:\Users\Sarah Francis\Documents\C#\Aula1\Aula1\obj\Debug\Aula1.frmTelaCadastro.resources
