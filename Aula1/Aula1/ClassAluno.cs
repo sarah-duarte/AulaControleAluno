@@ -14,6 +14,7 @@ namespace Aula1
         private int telefone;
         private String curso;
         private String endereco;
+        public String status = "desmatriculado";
 
         public void setNome(String nome) { this.nome = nome; }
         public String getNome() { return this.nome; }
@@ -27,5 +28,11 @@ namespace Aula1
         public String getCurso() { return this.curso; }
         public void setEndereco(String endereco) { this.endereco = endereco; }
         public String getEndereco() { return this.endereco; }
+
+        public String matricular()
+        {
+            status = "matriculado";
+            return this.status;
+        }
     }
 }

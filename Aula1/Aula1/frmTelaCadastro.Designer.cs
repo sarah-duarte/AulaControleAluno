@@ -42,9 +42,18 @@
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.txtCurso = new System.Windows.Forms.TextBox();
-            this.btnSair = new System.Windows.Forms.Button();
+            this.btnMatricular = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.alunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.novoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.calouroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.veteranoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.analiseEDesenvolvimentoDeSistemasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -173,17 +182,17 @@
             this.txtCurso.Size = new System.Drawing.Size(291, 27);
             this.txtCurso.TabIndex = 11;
             // 
-            // btnSair
+            // btnMatricular
             // 
-            this.btnSair.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(265, 325);
-            this.btnSair.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(109, 32);
-            this.btnSair.TabIndex = 13;
-            this.btnSair.Text = "Sair";
-            this.btnSair.UseVisualStyleBackColor = true;
-            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            this.btnMatricular.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMatricular.Location = new System.Drawing.Point(265, 325);
+            this.btnMatricular.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnMatricular.Name = "btnMatricular";
+            this.btnMatricular.Size = new System.Drawing.Size(109, 32);
+            this.btnMatricular.TabIndex = 13;
+            this.btnMatricular.Text = "Matricular";
+            this.btnMatricular.UseVisualStyleBackColor = true;
+            this.btnMatricular.Click += new System.EventHandler(this.btnMatricular_Click);
             // 
             // btnCancelar
             // 
@@ -204,12 +213,73 @@
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label7.Location = new System.Drawing.Point(13, 9);
+            this.label7.Location = new System.Drawing.Point(13, 39);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(208, 23);
             this.label7.TabIndex = 14;
             this.label7.Text = "CADASTRO DE ALUNOS";
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.alunoToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(630, 24);
+            this.menuStrip1.TabIndex = 15;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // alunoToolStripMenuItem
+            // 
+            this.alunoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.novoToolStripMenuItem,
+            this.consultarToolStripMenuItem,
+            this.editarToolStripMenuItem});
+            this.alunoToolStripMenuItem.Name = "alunoToolStripMenuItem";
+            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.alunoToolStripMenuItem.Text = "Aluno";
+            // 
+            // novoToolStripMenuItem
+            // 
+            this.novoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.calouroToolStripMenuItem,
+            this.veteranoToolStripMenuItem,
+            this.analiseEDesenvolvimentoDeSistemasToolStripMenuItem});
+            this.novoToolStripMenuItem.Name = "novoToolStripMenuItem";
+            this.novoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.novoToolStripMenuItem.Text = "Novo";
+            // 
+            // consultarToolStripMenuItem
+            // 
+            this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarToolStripMenuItem.Text = "Consultar";
+            // 
+            // editarToolStripMenuItem
+            // 
+            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarToolStripMenuItem.Text = "Editar";
+            // 
+            // calouroToolStripMenuItem
+            // 
+            this.calouroToolStripMenuItem.Name = "calouroToolStripMenuItem";
+            this.calouroToolStripMenuItem.Size = new System.Drawing.Size(281, 22);
+            this.calouroToolStripMenuItem.Text = "Calouro";
+            this.calouroToolStripMenuItem.Click += new System.EventHandler(this.calouroToolStripMenuItem_Click);
+            // 
+            // veteranoToolStripMenuItem
+            // 
+            this.veteranoToolStripMenuItem.Name = "veteranoToolStripMenuItem";
+            this.veteranoToolStripMenuItem.Size = new System.Drawing.Size(281, 22);
+            this.veteranoToolStripMenuItem.Text = "Veterano";
+            // 
+            // analiseEDesenvolvimentoDeSistemasToolStripMenuItem
+            // 
+            this.analiseEDesenvolvimentoDeSistemasToolStripMenuItem.Name = "analiseEDesenvolvimentoDeSistemasToolStripMenuItem";
+            this.analiseEDesenvolvimentoDeSistemasToolStripMenuItem.Size = new System.Drawing.Size(281, 22);
+            this.analiseEDesenvolvimentoDeSistemasToolStripMenuItem.Text = "Analise e Desenvolvimento de Sistemas";
             // 
             // frmTelaCadastro
             // 
@@ -219,7 +289,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 390);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.btnSair);
+            this.Controls.Add(this.btnMatricular);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtCurso);
             this.Controls.Add(this.txtEndereco);
@@ -234,8 +304,12 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmTelaCadastro";
             this.Text = "Tela de Cadastro";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,8 +330,16 @@
         private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.TextBox txtCurso;
-        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnMatricular;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem alunoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem novoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem calouroToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem veteranoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem analiseEDesenvolvimentoDeSistemasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editarToolStripMenuItem;
     }
 }

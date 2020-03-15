@@ -50,12 +50,6 @@ namespace Aula1
                 MessageBox.Show(erro.Message,"Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void btnSair_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             txtNome.Clear();
@@ -64,6 +58,22 @@ namespace Aula1
             txtMatricula.Clear();
             txtEndereco.Clear();
             txtCurso.Clear();
+            txtNome.Focus();
+        }
+
+        private void btnMatricular_Click(object sender, EventArgs e)
+        {
+            ClassAluno novoAluno = new ClassAluno();
+            novoAluno.matricular();
+            string str = novoAluno.status;
+            MessageBox.Show(str,"Metodo matricular",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void calouroToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCalouro telaCalouro = new frmCalouro();
+            telaCalouro.ShowDialog();
+            
         }
     }
 }
